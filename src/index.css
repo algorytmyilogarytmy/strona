@@ -1,0 +1,635 @@
+html, body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon{
+    display: flex;
+    align-items: center;  
+    gap: 10px; 
+    min-width: 0;
+    white-space: nowrap;
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
+}
+
+.icon img{
+    display: block;
+}
+
+.header{
+    z-index: 10;
+    display: flex;
+    gap: 220px;
+    position: relative;
+    margin-top: auto;
+    background-color: hsl(0, 0%, 100%);
+    font-family:"Gloria Hallelujah", cursive,sans-serif;
+    font-size: 20px;
+    color: hsl(260, 38%, 56%);
+    border-bottom: 1px solid hsl(260, 38%, 56%);
+    padding-bottom: 2px;
+    height: auto;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    flex-wrap: nowrap;
+}
+
+.navbar{
+display: flex;
+  justify-content: center;  
+  align-items: center;
+  gap: 20px;                
+  flex: 1;                  
+  min-width: 0;             
+  overflow: hidden;   
+}
+
+.navbar a{
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    white-space: nowrap;
+}
+
+.socials1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    margin-right: 10px;
+    gap: 10px;
+}
+.back{
+    min-height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    background-image: url("images/tlo.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container, .container2, .container3{
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    flex: 1;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+
+.container2{
+    flex: 1;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container3{
+    flex: 1;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.background{
+    position: absolute;
+    width: 100%;
+    min-height: 100dvh;
+    background-image: url("images/bck.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+.box{
+    z-index: 10;
+    position: relative;
+    display: flex;
+    background-color: hsl(263, 100%, 98%);
+    color: hsl(0, 0%, 100%);
+    min-width: 80vw;
+    max-width: 100%;
+    height: auto;
+    padding: 0px;
+    border: 3px solid hsl(260, 38%, 56%);
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px hsl(0, 0%, 72%);
+}
+
+.block{
+    z-index: 10;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: 	#ffffff;
+    color: hsl(0, 0%, 100%);
+    min-width: 80vw;
+    max-width: 100%;
+    height: auto;
+    padding: 0px;
+    border: 3px solid hsl(260, 49%, 72%);
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px hsl(0, 0%, 72%);
+}
+
+.box1{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: hsl(263, 100%, 98%);
+    width: 50%;
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+.box5{
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 100%);
+    width: 50%;
+    border-right: 3px solid hsl(260, 38%, 56%);
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+}
+
+.box6{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: hsl(263, 100%, 97%);
+    width: 50%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+
+.box2{
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 100%);
+    width: 50%;
+    border-left: 3px solid hsl(260, 49%, 72%);
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+
+.box3{
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+}
+
+.box4{
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;   
+    justify-content: flex-start; 
+    align-items: center;       
+    padding: 20px;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(260, 38%, 56%);     
+    width: 100%;
+}
+
+.logo1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-image: url("images/grafika3.png");
+    background-position: center;
+    background-size: contain;
+    background-color: white;
+    background-repeat: no-repeat;
+}
+
+.logo4{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-image: url("images/grafika4.png");
+    background-position: center;
+    background-size: contain;
+    background-color: white;
+    background-repeat: no-repeat;
+}
+
+.logo3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-image: url("images/grafika3.png");
+    background-position: center;
+    background-size: contain;
+    background-color: white;
+    background-repeat: no-repeat;
+}
+
+.image{
+    background-image: url("images/logo/1.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 30%;
+    display: none;
+    margin-top: 10px;
+}
+
+.logo2{
+  width: 70%;      
+  height: 80%;      
+  display: block;
+  margin-top: auto;
+}
+
+.logo5{
+  width: 50%;      
+  height: 50%;      
+  display: block;
+
+}
+.main{
+  flex:1;
+}
+
+.footer{
+    margin-top: auto;
+    background-color: hsl(260, 49%, 92%);
+    font-family:"Gloria Hallelujah", cursive,sans-serif;
+    color: hsl(260, 38%, 36%);
+    border-top: 1px solid hsl(260, 38%, 56%);
+    padding-top: 3px;
+    height: auto;
+    width: 100%;
+    align-items: center;
+}
+
+.socials {
+    text-align: center;
+    font-size: 15px;
+    gap: 20px;
+}
+
+a{
+    color: hsl(260, 38%, 56%);
+    text-decoration: none;
+}
+
+#contact, #documents, #cookies{
+    text-align: center;
+}
+
+#cookies{
+    font-size: 10px;
+    color: hsl(260, 49%, 72%)
+}
+#myP1{
+    font-family:"Gloria Hallelujah", cursive, sans-serif;
+    text-align: left;
+    color: hsl(260, 38%, 56%);
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#myP2{
+    font-family:"Gloria Hallelujah", cursive, sans-serif;
+    text-align: center;
+    color: hsl(260, 38%, 56%);
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#greeting{
+    font-family:"Gloria Hallelujah", cursive, sans-serif;
+    text-align: center;
+    color: hsl(260, 38%, 56%);
+    font-size: 3rem;
+    margin-top:0;
+    margin-bottom: 3px;
+}
+
+#greeting2{
+    font-family:"Gloria Hallelujah", cursive, sans-serif;
+    text-align: center;
+    color: #ffe478;
+    font-size: 3rem;
+    margin-top:0;
+    margin-bottom: 3px;
+}
+
+.icon:hover{
+    color:#ffe478;
+}
+
+#email{
+    display: block;
+    margin: 0 auto;
+    height: 50px;
+    width: 90%;
+    max-width: 400px;
+    border: 2.35px solid hsl(260, 49%, 72%);
+    border-radius: 70px;
+    margin-bottom: 15px;
+    
+    font-family:"Gloria Hallelujah", cursive, sans-serif;
+    color: hsl(260, 38%, 56%);
+    text-align: center;
+
+}
+
+#email:focus{
+    outline: none;
+    border: 2.35px solid hsl(260, 38%, 56%);
+}
+
+#email::placeholder{
+    color: hsl(260, 49%, 87%);
+}
+
+.btn-link{
+    font-family:"Gloria Hallelujah", cursive,sans-serif;
+    color: hsl(260, 38%, 56%);
+    width: 60%;
+    max-width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75rem;
+    margin: 0 auto;
+    background-color: hsla(0, 0%, 100%, 0.914);
+    border: 2.35px solid hsl(260, 49%, 72%);
+    border-radius: 70px;
+    cursor: pointer;
+}
+.btn-link:hover{
+    background-color: #fff3c5;
+}
+
+.navbar a:hover{
+    color: #ffe478;
+}
+
+.footer a:hover{
+    color: #ffe478;
+}
+
+#submit{
+    font-family:"Gloria Hallelujah", cursive,sans-serif;
+    color: hsl(260, 38%, 56%);
+    width: 60%;
+    max-width: 150px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    background-color: hsla(0, 0%, 100%, 0.914);
+    border: 2.35px solid hsl(260, 49%, 72%);
+    border-radius: 70px;
+    cursor: pointer;
+}
+#submit:hover{
+    background-color: #fff3c5;
+}
+
+.image1{
+    background-image: url("images/grafika3.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 30%;
+    display: none;
+    margin-top: 10px;
+}
+
+.image2{
+    background-image: url("images/grafika4.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 30%;
+    display: none;
+    margin-top: 10px;
+}
+
+
+.animation {
+    position: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: 100vh;
+    left: 0;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.7;
+    font-size: 60px;
+    animation: slideUp 45s linear infinite;
+}
+
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(calc(100vh + 100%)) rotateZ(0deg); 
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.8; 
+    }
+    50% {
+        opacity: 0.8; 
+    }
+    100% {
+        transform: translateY(-120vh) rotateZ(360deg); 
+        opacity: 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+  .box1, .box6{
+    flex-direction: column;
+    height: auto;
+    border-radius: 30px;
+    width: auto;
+    border-radius: 0;
+    border-right: none;
+    border-bottom: none; 
+    animation: none;   
+    gap: 20px;
+}
+
+.box6{
+    background-color: white;
+}
+ .image1, .image2{
+    min-width: 50px;
+    min-height: 50px;
+    display:block;
+  }
+
+  .box5{
+    display:none;
+  }
+
+    .animation{
+        animation: none;
+        display: none;
+    }
+  .header {
+    gap: 10px;                   
+    justify-content: space-between;
+    flex-wrap: wrap;           
+  }
+     .navbar {
+    display: flex !important;      
+    flex-direction: row;           
+    justify-content: center;       
+    gap: 10px;
+    flex: unset;
+    overflow: visible;
+  }
+
+.box2 {
+    display: none;
+}
+
+  #greeting {
+    font-size: 2.2rem;
+  }
+
+  #myP1 {
+    font-size: 14px;
+    padding: 0 10px;
+    text-align: center;
+  }
+  #email {
+    width: 90%;
+    font-size: 0.3rem;
+    height: 45px;
+  }
+
+  #submit {
+    width: 70%;
+    font-size: 0.5rem;
+    height: 45px;
+  }
+
+  .background {
+    background-size: cover;
+  }
+
+  .image{
+    display:block;
+  }
+
+  footer {
+    margin-top: auto;
+    font-size: 12px;
+    padding: 15px 10px;
+  }
+
+  .socials img {
+    width: 15px;
+    height: auto;
+  }
+
+  .socials1{
+    display: flex;
+    flex-direction: row;         
+    gap: 8px;
+    align-items: center;
+    flex-shrink: 0;    
+  }
+    .socials1 img {
+    width: 15px;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    flex-wrap: wrap;          
+    gap: 10px;
+    justify-content: center;  
+  }
+
+  .navbar {
+    width: 100%;             
+    justify-content: center;
+  }
+
+  .socials1 {
+    width: 100%;             
+    justify-content: center;
+  }
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
